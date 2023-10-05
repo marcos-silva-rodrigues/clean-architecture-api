@@ -12,5 +12,7 @@
             "./tsconfig.json"
         ]
     },
-    "rules": {}
+    "rules": {
+      "@typescript-eslint/no-extraneous-class": "off"
+    }
 }
