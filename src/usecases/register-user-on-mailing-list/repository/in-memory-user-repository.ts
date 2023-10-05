@@ -19,7 +19,7 @@ export class InMemoryUserRepository implements UserRepository {
   }
 
   async findAllUser (): Promise<UserData[]> {
-    throw new Error('Not implemented')
+    return this.repository
   }
 
   async exists (user: UserData): Promise<boolean> {
