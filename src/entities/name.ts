@@ -25,6 +25,10 @@ export class Name {
       return false
     }
 
+    if (name.trim().length > 256) {
+      return false
+    }
+
     return true
   }
 }
