@@ -1,4 +1,5 @@
 import { left } from '../shared/either'
+import { InvalidNameError } from './error/Invalid-name-error'
 import { InvalidEmailError } from './error/invalid-email-error'
 import { User } from './user'
 
@@ -11,5 +12,15 @@ describe('User domain entity', () => {
     })
 
     expect(error).toEqual(left(new InvalidEmailError()))
+  })
+
+  test('should not create user invalid name (too few characters)', () => {
+    const invalidName = 'O          '
+    const error = User.create({
+      name: invalidName,
+      email: 'fulano@mail.com'
+    })
+
+    expect(error).toEqual(left(new InvalidNameError()))
   })
 })
