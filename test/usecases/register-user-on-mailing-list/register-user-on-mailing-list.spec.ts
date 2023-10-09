@@ -1,6 +1,6 @@
-import { type UserData } from '../../entities/user-data'
-import { type UserRepository } from './ports/users-repository'
-import { RegisterUserOnMailingList } from './register-user-on-mailing-list'
+import { type UserData } from '../../../src/entities/user-data'
+import { type UserRepository } from '../../../src/usecases/register-user-on-mailing-list/ports/users-repository'
+import { RegisterUserOnMailingList } from '../../../src/usecases/register-user-on-mailing-list/register-user-on-mailing-list'
 import { InMemoryUserRepository } from './repository/in-memory-user-repository'
 
 describe('Register user on mailing list use case', () => {
