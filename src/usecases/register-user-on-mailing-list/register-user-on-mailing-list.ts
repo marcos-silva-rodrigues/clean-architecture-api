@@ -1,4 +1,4 @@
-import { type InvalidNameError } from '../../entities/error/Invalid-name-error'
+import { type InvalidNameError } from '../../entities/error/invalid-name-error'
 import { type InvalidEmailError } from '../../entities/error/invalid-email-error'
 import { User } from '../../entities/user'
 import { type UserData } from '../../entities/user-data'

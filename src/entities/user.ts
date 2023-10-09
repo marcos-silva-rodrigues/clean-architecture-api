@@ -1,6 +1,6 @@
 import { left, type Either, right } from '../shared/either'
 import { Email } from './email'
-import { type InvalidNameError } from './error/Invalid-name-error'
+import { type InvalidNameError } from './error/invalid-name-error'
 import { type InvalidEmailError } from './error/invalid-email-error'
 import { Name } from './name'
 import { type UserData } from './user-data'
