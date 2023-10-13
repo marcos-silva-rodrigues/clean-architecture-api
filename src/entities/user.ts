@@ -1,5 +1,5 @@
 import { left, type Either, right } from '@/shared'
-import { type InvalidNameError, type InvalidEmailError } from './errors'
+import { type InvalidNameError, type InvalidEmailError } from '@/entities/errors'
 import { type UserData, Name, Email } from '.'
 
 export class User {

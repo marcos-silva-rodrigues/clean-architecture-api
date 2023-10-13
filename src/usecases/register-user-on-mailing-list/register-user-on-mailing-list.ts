@@ -1,7 +1,7 @@
 import { type UserData, User } from '@/entities'
 import { type InvalidEmailError, type InvalidNameError } from '@/entities/errors'
 import { type Either, left, right } from '@/shared'
-import { type UserRepository } from './ports'
+import { type UserRepository } from '@/usecases/register-user-on-mailing-list/ports'
 
 export class RegisterUserOnMailingList {
   constructor (private readonly userRepo: UserRepository) {}
