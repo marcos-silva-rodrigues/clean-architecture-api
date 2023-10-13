@@ -1,6 +1,6 @@
-import { User, type UserData } from '../../entities'
-import { type InvalidEmailError, type InvalidNameError } from '../../entities/errors'
-import { type Either, left, right } from '../../shared'
+import { type UserData, User } from '@/entities'
+import { type InvalidEmailError, type InvalidNameError } from '@/entities/errors'
+import { type Either, left, right } from '@/shared'
 import { type UserRepository } from './ports'
 
 export class RegisterUserOnMailingList {

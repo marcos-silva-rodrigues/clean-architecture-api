@@ -1,4 +1,4 @@
-import { left, type Either, right } from '../shared'
+import { left, type Either, right } from '@/shared'
 import { type InvalidNameError, type InvalidEmailError } from './errors'
 import { type UserData, Name, Email } from '.'
 

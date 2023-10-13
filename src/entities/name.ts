@@ -1,4 +1,4 @@
-import { left, type Either, right } from '../shared'
+import { left, type Either, right } from '@/shared'
 import { InvalidNameError } from './errors'
 
 export class Name {

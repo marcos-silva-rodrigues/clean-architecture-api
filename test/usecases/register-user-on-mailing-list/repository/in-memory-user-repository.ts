@@ -1,5 +1,5 @@
-import { type UserRepository } from '../../../../src/usecases/register-user-on-mailing-list'
-import { type UserData } from '../../../../src/entities'
+import { type UserRepository } from '@/usecases/register-user-on-mailing-list'
+import { type UserData } from '@/entities'
 
 export class InMemoryUserRepository implements UserRepository {
   constructor (private readonly repository: UserData[]) {
